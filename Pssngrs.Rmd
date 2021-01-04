@@ -1,8 +1,8 @@
 ---
 title: "Airline passengers satisfaction"
-author: "Guillermo Peña"
+author: "Guillermo Pe<c3><b1>a"
 date: "03/01/2021"
-output: html_document
+output: pdf_document
 ---
 
 This dataset contains an airline passenger satisfaction survey. The main questions that comes to mind are:
@@ -15,26 +15,26 @@ We are looking into a dataset that has been split in train and test datasets wit
 
 Necessary libraries for the analysis
 ```{r}
-
 if (!require(broom)) install.packages('broom')
 if (!require(tidyverse)) install.packages('tidyverse')
 if (!require(caret)) install.packages('caret')
 if (!require(MASS)) install.packages('MASS')
 if (!require(ROCR)) install.packages('ROCR')
+if (!require(readr)) install.packages('readr')
 library(broom)
 library(tidyverse)
 library(caret)
 library(MASS)
 library(ROCR)
+library(readr)
 ```
 
 
 ```{r}
-train_data = read.csv('train.csv')
-test_data = read.csv('test.csv')
-
-str(train_data)
-str(test_data)
+url_train <- "https://github.com/guillepena/Passenger-Satisfaction/blob/master/train.csv"
+train_data <- read.csv("train.csv")
+url_test <- "https://github.com/guillepena/Passenger-Satisfaction/blob/master/test.csv"
+test_data <- read.csv("test.csv")
 ```
 
 
