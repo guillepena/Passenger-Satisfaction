@@ -31,10 +31,10 @@ library(readr)
 
 
 ```{r}
-url_train <- "https://github.com/guillepena/Passenger-Satisfaction/blob/master/train.csv"
-train_data <- read.csv("train.csv")
-url_test <- "https://github.com/guillepena/Passenger-Satisfaction/blob/master/test.csv"
-test_data <- read.csv("test.csv")
+url_train <- "https://raw.githubusercontent.com/guillepena/Passenger-Satisfaction/master/train.csv"
+train_data <- read.csv(url_train,header=TRUE)
+url_test <- "https://raw.githubusercontent.com/guillepena/Passenger-Satisfaction/master/test.csv"
+test_data <- read.csv(url_test,header=TRUE)
 ```
 
 
