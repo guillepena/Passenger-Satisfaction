@@ -1,8 +1,8 @@
 ---
 title: "Airline passengers satisfaction"
-author: "Guillermo Pe<c3><b1>a"
+author: "Guillermo Peña"
 date: "03/01/2021"
-output: pdf_document
+output: html_document
 ---
 
 This dataset contains an airline passenger satisfaction survey. The main questions that comes to mind are:
